@@ -1,0 +1,130 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigada Escolar Interdisciplinaria Negro Primero II</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366; /* Azul oscuro */
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6600; /* Naranja */
+            padding: 0.5em;
+        }
+        nav a {
+            color: #ffffff;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #ff4500; /* Naranja más oscuro */
+        }
+        .container {
+            padding: 2em;
+        }
+        h1, h2, h3 {
+            color: #003366;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brigada Escolar Interdisciplinaria Negro Primero II</h1>
+        <p>Guiando el Futuro</p>
+    </header>
+    <nav>
+        <a href="#info">Información</a>
+        <a href="#mision-vision">Misión y Visión</a>
+        <a href="#miembros">Miembros</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#galeria">Galería</a>
+    </nav>
+    <div class="container">
+        <section id="info">
+            <h2>Información sobre la Brigada</h2>
+            <p>La Brigada Escolar Interdisciplinaria Negro Primero II es un grupo dedicado a la formación integral de los estudiantes a través de diversas actividades y proyectos interdisciplinarios.</p>
+        </section>
+
+        <section id="mision-vision">
+            <h2>Misión y Visión</h2>
+            <h3>Misión</h3>
+            <p>Formar líderes comprometidos con la excelencia académica y el desarrollo personal a través de un enfoque interdisciplinario.</p>
+            <h3>Visión</h3>
+            <p>Ser un referente en la educación integral y en la formación de ciudadanos responsables y proactivos en la sociedad.</p>
+        </section>
+
+        <section id="miembros">
+            <h2>Miembros</h2>
+            <p>Conoce a los miembros activos de la brigada, quienes trabajan arduamente para llevar a cabo nuestras metas y proyectos.</p>
+            <!-- Aquí puedes agregar una lista o tabla de miembros -->
+        </section>
+
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <p>Información sobre eventos próximos y pasados organizados por la brigada.</p>
+            <!-- Puedes agregar detalles de eventos aquí -->
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Descubre los proyectos actuales y futuros en los que está trabajando la brigada.</p>
+            <!-- Agrega detalles sobre proyectos -->
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Fotos</h2>
+            <div class="gallery">
+                <img src="foto1.jpg" alt="Foto 1">
+                <img src="foto2.jpg" alt="Foto 2">
+                <!-- Agrega más imágenes aquí -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Brigada Escolar Interdisciplinaria Negro Primero II</p>
+        <p>Contador de visitas: <span id="visitor-counter">0</span></p>
+    </footer>
+
+    <script>
+        // Código básico para el contador de visitas (requiere backend para ser funcional)
+        let count = 0;
+        document.getElementById('visitor-counter').innerText = count;
+
+        // Simulación para desarrollo local (puedes reemplazar con un sistema de backend)
+        document.addEventListener('DOMContentLoaded', function() {
+            count++;
+            document.getElementById('visitor-counter').innerText = count;
+        });
+    </script>
+</body>
+</html>
